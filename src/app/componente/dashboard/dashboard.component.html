@@ -1,1 +1,47 @@
-<p>dashboard works!</p>
+<br>
+<br>
+<div class="container">
+    <h2>{{ titulo }}</h2>
+    <br>
+    <p>{{ descripcion }}</p>
+    <br>
+    <ul><b>Alumno:</b> {{ nombreAlumno }}</ul>
+    <ul><b>Profesor:</b> {{ nombreProfesor }}</ul>
+    <ul><b>Materia:</b> {{ getMaterial() }}</ul>
+    <ul><b>Instituto:</b> {{ tIncuyo }} </ul>
+    <br>
+    <hr>
+    <br>
+
+    <h2>{{ tituloProperty }}</h2>
+    <p><b>Ejemplo 1:</b> imagenes</p>
+    <img [src]="imagen" width="450" height="250">
+    <br>
+
+    <p><b>Ejemplo 2:</b> input</p>
+    Nombre del Alumno: <input type="text" [placeholder]="tProperty">
+    <br>
+    <p><b>Datos</b></p>
+    Apellido del alumno: <input type="text" [placeholder]="tProperty2">
+    <br>
+    <br>
+    <br>
+    <img [src]="imagen2" width="450" height="250">
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>{{ tituloEvent }}</h2>
+    <br>
+    <p>{{ textEvent }} </p>
+    <ul><b>Suma:</b> {{ numero1 }} + {{ numero2 }} = {{sumaEvent}} <button (click)="sumar()">Sumar</button></ul>
+    <ul><b>Resta:</b> {{ numero1 }} - {{ numero2 }} = <button (click)="restar()">Restar</button></ul>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</div>
